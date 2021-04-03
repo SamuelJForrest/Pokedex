@@ -717,7 +717,8 @@ const pokedex = [
         name: 'Exeggutor',
         number: '103',
         type: 'Grass - Psychic',
-        weaknesses: 'Each of Exeggutor’s three heads is thinking different thoughts. The three don’t seem to be very interested in one another.'
+        weaknesses: 'Water - Grass - Ice',
+        info: 'This Pokémon overcame its sorrow to evolve a sturdy new body. Marowak faces its opponents bravely, using a bone as a weapon.'
     },
     {
         name: 'Cubone',
