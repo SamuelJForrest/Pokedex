@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <!--Google fonts-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <!--My CSS stylesheet-->
+    <link rel="stylesheet" href="app.css">
+    <title>Pokedex</title>
+</head>
+<body>
+
+    <div class="header"><img src="pokemon-23.svg" width="500px"></div>
+
+
+    <div class="pokeflex">
+        <div class="pokecontainer">
+            <img src="" alt="" id="pokepic">
+        </div>
+        <div class="poketext">
+            <p id="poketext"></p>
+        </div>
+    </div>
+
+    <div class="pokebtndiv">
+        <button class="pokebtn" id="pokebtn">Choose Random Pokemon</button>
+        <button id="previous" class="previous"><</button>
+        <select name="pokelist" id="pokelist" class="pokelist">
+            <option value="0">Select a Pokemon </option>
+            <option value="1">#1: Bulbasaur</option>
+            <option value="2">#2: Ivysaur</option>
+            <option value="3">#3: Venasaur</option>
+            <option value="4">#4: Charmander</option>
+            <option value="5">#5: Charmeleon</option>
+            <option value="6">#6: Charizard</option>
+            <option value="7">#7: Squirtle</option>
+            <option value="8">#8: Wartortle</option>
+            <option value="9">#9: Blastoise</option>
+            <option value="10">#10: Caterpie</option>
+            <option value="11">#11: Metapod</option>
+            <option value="12">#12: Butterfree</option>
+            <option value="13">#13: Weedle</option>
+            <option value="14">#14: Kakuna</option>
+            <option value="15">#15: Beedrill</option>
+            <option value="16">#16: Pidgey</option>
+            <option value="17">#17: Pidgeotto</option>
+            <option value="18">#18: Pidgeot</option>
+            <option value="19">#19: Rattata</option>
+            <option value="20">#20: Raticate</option>
+            <option value="21">#21: Spearow</option>
+            <option value="22">#22: Fearow</option>
+            <option value="23">#23: Ekans</option>
+            <option value="24">#24: Arbok</option>
+            <option value="25">#25: Pikachu</option>
+            <option value="26">#26: Raichu</option>
+            <option value="27">#27: Sandshrew</option>
+            <option value="28">#28: Sandslash</option>
+            <option value="29">#29: Nidoran (female)</option>
+            <option value="30">#30: Nidorina</option>
+            <option value="31">#31: Nidoqueen</option>
+            <option value="32">#32: Nidoran (male)</option>
+            <option value="33">#33: Nidorino</option>
+            <option value="34">#34: Nidoking</option>
+            <option value="35">#35: Clefairy</option>
+            <option value="36">#36: Clefable</option>
+            <option value="37">#37: Vulpix</option>
+            <option value="38">#38: Ninetales</option>
+            <option value="39">#39: Jiggypuff</option>
+            <option value="40">#40: Wigglytuff</option>
+            <option value="41">#41: Zubat</option>
+            <option value="42">#42: Golbat</option>
+            <option value="43">#43: Oddish</option>
+            <option value="44">#44: Gloom</option>
+            <option value="45">#45: Vileplume</option>
+            <option value="46">#46: Paras</option>
+            <option value="47">#47: Parasect</option>
+            <option value="48">#48: Venonat</option>
+            <option value="49">#49: Venomoth</option>
+            <option value="50">#50: Diglett</option>
+            <option value="51">#51: Dugtrio</option>
+            <option value="52">#52: Meowth</option>
+            <option value="53">#53: Persian</option>
+            <option value="54">#54: Psyduck</option>
+            <option value="55">#55: Golduck</option>
+            <option value="56">#56: Mankey</option>
+            <option value="57">#57: Primeape</option>
+            <option value="58">#58: Growlithe</option>
+            <option value="59">#59: Arcanine</option>
+            <option value="60">#60: Poliwag</option>
+            <option value="61">#61: Poliwhirl</option>
+            <option value="62">#62: Poliwrath</option>
+            <option value="63">#63: Abra</option>
+            <option value="64">#64: Kadabra</option>
+            <option value="65">#65: Alakazam</option>
+            <option value="66">#66: Machop</option>
+            <option value="67">#67: Machoke</option>
+            <option value="68">#68: Machamp</option>
+            <option value="69">#69: Bellsprout</option>
+            <option value="70">#70: Weepinbell</option>
+            <option value="71">#71: Victrebell</option>
+            <option value="72">#72: Tentacool</option>
+            <option value="73">#73: Tentacruel</option>
+            <option value="74">#74: Geodude</option>
+            <option value="75">#75: Graveler</option>
+            <option value="76">#76: Golem</option>
+            <option value="77">#77: Ponyta</option>
+            <option value="78">#78: Rapidash</option>
+            <option value="79">#79: Slowpoke</option>
+            <option value="80">#80: Slowbro</option>
+            <option value="81">#81: Magnemite</option>
+            <option value="82">#82: Magneton</option>
+            <option value="83">#83: Farfetch'd</option>
+            <option value="84">#84: Doduo</option>
+            <option value="85">#85: Dodrio</option>
+            <option value="86">#86: Seel</option>
+            <option value="87">#87: Dewgong</option>
+            <option value="88">#88: Grimer</option>
+            <option value="89">#89: Muk</option>
+            <option value="90">#90: Shellder</option>
+            <option value="91">#91: Cloyster</option>
+            <option value="92">#92: Gastly</option>
+            <option value="93">#93: Haunter</option>
+            <option value="94">#94: Gengar</option>
+            <option value="95">#95: Onix</option>
+            <option value="96">#96: Drowzee</option>
+            <option value="97">#97: Hypno</option>
+            <option value="98">#98: Krabby</option>
+            <option value="99">#99: Kingler</option>
+            <option value="100">#100: Voltorb</option>
+            <option value="101">#101: Electrode</option>
+            <option value="102">#102: Exeggcute</option>
+            <option value="103">#103: Exeggutor</option>
+            <option value="104">#104: Cubone</option>
+            <option value="105">#105: Marowak</option>
+            <option value="106">#106: Hitmonlee</option>
+            <option value="107">#107: Hitmonchan</option>
+            <option value="108">#108: Lickitung</option>
+            <option value="109">#109: Koffing</option>
+            <option value="110">#110: Weezing</option>
+            <option value="111">#111: Rhyhorn</option>
+            <option value="112">#112: Rhydon</option>
+            <option value="113">#113: Chansey</option>
+            <option value="114">#114: Tangela</option>
+            <option value="115">#115: Kangaskhan</option>
+            <option value="116">#116: Horsea</option>
+            <option value="117">#117: Seadra</option>
+            <option value="118">#118: Goldeen</option>
+            <option value="119">#119: Seaking</option>
+            <option value="120">#120: Staryu</option>
+            <option value="121">#121: Starmie</option>
+            <option value="122">#122: Mr. Mime</option>
+            <option value="123">#123: Scyther</option>
+            <option value="124">#124: Jynx</option>
+            <option value="125">#125: Electabuzz</option>
+            <option value="126">#126: Magmar</option>
+            <option value="127">#127: Pinsir</option>
+            <option value="128">#128: Tauros</option>
+            <option value="129">#129: Magikarp</option>
+            <option value="130">#130: Gyarados</option>
+            <option value="131">#131: Lapras</option>
+            <option value="132">#132: Ditto</option>
+            <option value="133">#133: Eevee</option>
+            <option value="134">#134: Vaporeon</option>
+            <option value="135">#135: Jolteon</option>
+            <option value="136">#136: Flareon</option>
+            <option value="137">#137: Porygon</option>
+            <option value="138">#138: Omanyte</option>
+            <option value="139">#139: Omastar</option>
+            <option value="140">#140: Kabuto</option>
+            <option value="141">#141: Kabutops</option>
+            <option value="142">#142: Aerodactyl</option>
+            <option value="143">#143: Snorlax</option>
+            <option value="144">#144: Articuno</option>
+            <option value="145">#145: Zapdos</option>
+            <option value="146">#146: Moltres</option>
+            <option value="147">#147: Dratini</option>
+            <option value="148">#148: Dragonair</option>
+            <option value="149">#149: Dragonite</option>
+            <option value="150">#150: Mewtwo</option>
+            <option value="151">#151: Mew</option>
+        </select>
+        <button id="next" class="next">></button>
+    </div>
+
+    <!--Javascript functions-->
+    <script src="app.js"></script>
+    <!--Pokemon JS objects-->
+    <script src="storage.js"></script>
+</body>
+</html>

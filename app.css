@@ -1,0 +1,99 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #ff0022;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.header {
+    height: 10vh;
+    width: 100%;
+    text-align: center;
+    margin: 50px 0;
+}
+
+.pokeflex {
+    background-color: black;
+    height: 60vh;
+    margin: 100px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pokecontainer {
+    text-align: center;
+    margin-left: 100px;
+}
+
+.pokecontainer img {
+    width: 600px;
+}
+
+.poketext {
+    width: 700px;
+    margin: 0 0 0 100px;
+    padding: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.poketext p {
+    margin: 25px 0;
+}
+
+.pokebtndiv {
+    text-align: center;
+}
+
+.pokebtn {
+    background-color: inherit;
+    color: white;
+    border: 5px solid white;
+    font-weight: bold;
+    padding: 30px 50px;
+    margin: 0 25px;
+    border-radius: 30px;
+    font-size: 1.75rem;
+    transition: all 200ms ease-in;
+}
+
+.pokebtn:hover {
+    transform: translateY(-5px);
+    box-shadow: 1px 7px 20px;
+    text-shadow: 1px 1px 1px;
+}
+
+.pokebtn:focus {
+    outline: none;
+}
+
+.pokelist, .previous, .next {
+    font-size: 1.75rem;
+    background-color: inherit;
+    color: white;
+    border: 5px solid white;
+    border-radius: 20px;
+    padding: 25px;
+}
+
+.pokelist:focus, .previous:focus, .next:focus {
+    outline: none;
+}
+
+.pokelist option {
+    color: black;
+}
+
+.textbox {
+    background-color: rgba(128, 128, 128, 0.2);
+    padding: 50px;
+    text-align: center;
+}
+
+
